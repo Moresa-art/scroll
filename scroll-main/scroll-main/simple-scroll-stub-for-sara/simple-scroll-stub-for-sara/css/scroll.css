@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+}
+
+header {
+    height: 600px;
+    line-height: 600px;
+    border: gray 1px solid;
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll-element {
+    height: 600px;
+    line-height: 600px;
+}
+
+#content1 {
+    background-color: blueviolet;
+}
+
+#content2 {
+    background-color: brown;
+}
+
+#content3 {
+    background-color: aliceblue;
+}
+
+#content4 {
+    background-color: blue;
+}
+
+#content5 {
+    background-color: darkgreen;
+}
+
+#content6 {
+    background-color: darkgoldenrod;
+}
+
+#content7 {
+    background-color: rgb(242, 34, 7);
+}
+
+.js-scroll {
+    opacity: 0;
+}
+
+.scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-in-bottom {
+    animation: slide-in-bottom 1s ease-in-out both;
+
+}
+.scrolled.rotate {
+    animation: rotate 1s ease-in-out both;
+}
+.scrolled.jump {
+    animation: scaleZ 2s ease-in-out both;
+}
+/*Keyframe animations*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translatex(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translatex(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translatex(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes scale {
+    0% {
+        transform: 
+        (100px);
+        opacity: 0;
+    }
+    100%{
+        transform:scaleZ(0) ;
+        opacity: 1;
+    }
+}
